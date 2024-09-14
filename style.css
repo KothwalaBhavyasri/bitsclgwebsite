@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.obox{
+    border: solid 1px;
+    height: 165px;
+    display: flex;
+}
+#box1,#box2{
+    border: solid 1px;
+    height: 165px;
+}
+#box1{
+    width: 165px;
+}
+#box2{
+    width: 1400px;
+    text-align: center;
+    background-color: bisque;
+}
+#clgname{
+    font-size: 55px;
+    color: navy;
+    
+}
+#text1{
+    color: purple;
+}
+#bits{
+    color: brown;
+    font-size: 35px;
+}
+#scrolltext{
+    font-size: 25px;
+    color: rgb(0, 128, 51);
+    font-weight: bold;
+    
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+    width: 1150px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 160px;
+    float: left;
+    text-align: center;
+    line-height: 49px;
+    background-color: rgb(0, 128, 4);
+    border-radius: 15px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: rgb(138, 48, 48);
+    font-size: 24px;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: bisque;
+    text-decoration: underline;
+}
+.outbox{
+    border: solid 1px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 400px;
+    z-index: -1;
+}
+#in1{
+    width: 600px;
+    background-color: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    10%{
+        background-image: url(img2.jpg);
+    }
+    20%{
+        background-image: url(img3.jpg);
+    }
+    30%{
+        background-image: url(img4.jpg);
+    }
+    40%{
+        background-image: url(img5.jpg);
+    }
+    50%{
+        background-image: url(img6.jpg);
+    }
+}
+#in2,#in3{
+    width: 280px;
+    text-align: center;
+}
